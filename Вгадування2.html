@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>President of Australia Quiz</title>
+</head>
+<style>
+    .button-43 {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 180px;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 650px;
+  margin-top: 300px;
+  height: 60px;
+}
+
+.button-43:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+body {
+    background-color: #17759C;
+}
+p {
+    margin-left: 550px;
+    font-size: 30px;
+    border: solid 0 0 5px 0 black;
+}
+</style>
+<body>
+
+<script>
+function checkPresident() {
+    let prezident = prompt("Як звуть президента Австралії?");
+    
+    if (prezident === 'Скотт Райан') {
+        alert('Ви вгадали!');
+    } else {
+        alert('Ви не вгадали) Правильна відповідь: Скотт Райан');
+    }
+}
+</script>
+
+<button onclick="checkPresident()" class="button-43">Перевірити президента</button>
+<p>Ласкаво просимо на Вікторину</p>
+</body>
+</html>
